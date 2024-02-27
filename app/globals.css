@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* mb-[20vh] bg-gradient-to-b from-pink-100 to-black w-[85vw] mx-auto */
+  /* margin-bottom: 20vh; */
+  background-image: linear-gradient(to bottom, #fce7f3, #000000);
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
