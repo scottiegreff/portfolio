@@ -83,7 +83,7 @@ export default function Portfolio() {
               <CarouselItem className="flex flex-col md:max-w-2xl" key={index}>
                 <Link className="my-10" target="_blank" href={project.link}>
                   <Image
-                    className="rounded-3xl"
+                    className="rounded-3xl hover:shadow-2xl hover:border hover:border-red-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
                     src={project.image}
                     alt={project.title}
                   />

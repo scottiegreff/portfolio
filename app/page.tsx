@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="mb-20">
       <div className="flex justify-center min-h-[100vh] mb-20">
         <iframe
           src="https://my.spline.design/welcomeblob-4e60ebf4ef3980e3eee6e23dc100691a/"

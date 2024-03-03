@@ -188,13 +188,13 @@ export default function HardSkills() {
   return (
     <>
       <div className="mt-10 lg:mt-20">
-        <h4 className="text-white text-[1.75rem]  md:text-[3rem] font-bold mb-10">
+        <h4 className="text-white text-[1.75rem] md:text-[3rem] font-bold mb-10 md:ms-5">
           Developers need to utilize many software tools.
         </h4>
       </div>
 
       <div className="mt-10 lg:mt-20">
-        <h4 className="text-white text-[1.5rem] md:text-[2.25rem] font-bold mb-15">
+        <h4 className="text-white text-[1.5rem] md:text-[2.25rem] font-bold mb-15 md:ms-5">
           Here are some hard skills I employ...
         </h4>
       </div>
