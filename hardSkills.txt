@@ -1,0 +1,176 @@
+
+       Languages,
+       
+        JavaScript,
+        TypeScript,
+        HTML,
+        CSS,
+        Python,
+        Java,
+        C++,
+        SQL,
+        PHP*,
+      ,
+    ,
+    
+       Front/Back Frameworks,
+       React, NextJS, Express, Django*,
+    ,
+    
+       CSS Frameworks,
+       Tailwind, Bootstrap,
+    ,
+    
+       Component Libraries,
+       
+        ShadCN,
+        React-Bootstrap,
+        Styled-Components,
+        Material-UI,
+        Tailwind-UI,
+      ,
+    ,
+    
+       Databases,
+       PostgreSQL, MongoDB, SQLite, Plain JSON,
+    ,
+      ORMs,  Mongoose, Prisma, Drizzle* ,
+    
+       Authentication,
+       
+        OAuth,
+        Auth.js,
+        Clerk*,
+        Sessions,
+        JWT,
+        Adapters,
+        Database,
+        Providers (Google,Facebook, etc.),
+      ,
+    ,
+      State Management,  Redux, Context, Zustand ,
+    
+       APIs,
+       
+        REST API,
+        Fetch,
+        Axios,
+        Public,
+        Token-Based,
+        SOAP*,
+      ,
+    ,
+    
+       Form Management and Validation,
+       React Hook Form, ZOD, Toast,
+    ,
+
+    // 
+    //    Cloud Services,
+    //    AWS, Google Cloud, Azure, Firebase, Netlify, Vercel,
+    // ,
+    // // 
+    // //    Containerization,
+    // //    Docker, Kubernetes, Vagrant, VirtualBox,
+    // // ,
+    // 
+    //    CI/CD,
+    //    GitHub Actions, Travis CI, Circle CI, Jenkins, GitLab,
+    // ,
+
+    // 
+    //    WebGL,
+    //    ThreeJS, BabylonJS, A-Frame, PlayCanvas, Regl,
+    // ,
+    // 
+    //    Serverless,
+    //    AWS Lambda, Azure Functions, Google Cloud Functions,
+    // ,
+
+      Accessibility,  Aria, Screen Readers, UX/UI ,
+    // 
+    //    Package Managers,
+    //    NPM, Yarn, PNPM, Vite, Webpack, Homebrew,
+    // ,
+    
+       Runtime Environments,
+       NodeJS, AWS Lambda*, MS DOTNET*,
+    ,
+    
+       Security & Prevention,
+       
+        SQL Injection,
+        CORS,
+        Cross-Site-Scripting,
+        CSRF,
+        XSS,
+        *continual education*,
+      ,
+    ,
+    
+       SEO,
+       
+        Crawling,
+        Ranking,
+        On-Page Optimization,
+        Keyword Research,
+        Off-Page Optimization,
+        Backlinks,
+        Google Analytics,
+        hrefs*,
+      ,
+    ,
+      Repositories,  Git, GitHub, GitBucket* ,
+    
+       Software Architecture,
+       Model-View-Controller, Model-View-ViewModel*,
+    ,
+    
+       Methodologies,
+       
+        CI/CD,
+        Agile Development,
+        Scrum,
+        User Stories,
+        Waterfall*,
+      ,
+    ,
+    
+       Coding Paradigms,
+       
+        Functional Programming,
+        Object-Oriented Programming,
+        Procedural Programming*,
+      ,
+    ,
+    //  Testing,  Jest,
+    
+       Animation - 2&3D,
+       
+        CSS,
+        Spline,
+        Adobe After Effects,
+        Framer Motion,
+        Blender*,
+        BabylonJS*,
+      ,
+    ,
+    
+       Graphics Editors,
+       
+        Figma,
+        Adobe Illustrator,
+        Adobe Photoshop,
+        Adobe Premiere Pro,
+      ,
+    ,
+    
+       Audio Recording,
+       
+        Audacity,
+        Logic Pro,
+        Cubase,
+        Garage Band,
+        Pro Tools*,
+      ,
+    ,

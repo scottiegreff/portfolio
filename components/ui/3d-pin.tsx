@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { cn } from "@/utils/cn";
+import { cn } from "@/lib/utils";
 
 export const PinContainer = ({
   body,
@@ -47,11 +47,11 @@ export const PinContainer = ({
           style={{
             transform: transform,
           }}
-          className="absolute left-1/2 p-4 top-1/2 flex justify-start items-start rounded-2xl shadow-[0_8px_16px_rgb(0_0_0/0.4)] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden w-[60vw] md:w-[30vw] lg:w-[20vw] min-h-[10rem] bg-gradient-to-br from-gray-100 to-white border border-rounded-lg border shadow-slate-200"
+          className="absolute left-1/2 p-4 top-1/2 rounded-2xl shadow-[0_8px_16px_rgb(0_0_0/0.4)] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden w-[60vw] md:w-[30vw] lg:w-[20vw] min-h-[10rem] bg-gradient-to-br from-gray-100 to-white border-rounded-lg shadow-slate-200"
         >
           <div
             className={cn(
-              "relative z-50 font-normal tracking-wider flex flex-col justify-content items-center text-slate-600 font-md h-auto rounded-2xl",
+              "relative z-50 font-normal tracking-wider text-slate-600 font-md h-auto rounded-2xl",
               className
             )}
           >
