@@ -54,7 +54,7 @@ export default function HardSkills() {
         "JWT",
         "Adapters",
         "Database",
-        "Providers (Google,Facebook, etc.)",
+        "Providers (Google, Facebook)",
       ],
     },
     { title: "State Management", body: ["Redux", "Context", "Zustand"] },
@@ -198,18 +198,18 @@ export default function HardSkills() {
           Here are some hard skills I employ...
         </h4>
       </div>
-      <div className="flex flex-wrap justify-center items-start mt-10">
+      <div className="flex flex-wrap justify-center items-center mt-10">
         {hardSkills.map((skill, index) => (
           <PinContainer
             key={index}
-            className="p-2"
-            containerClassName="rounded-lg mx-5"
+            className="flex flex-row justify-center items-center min-h-[40vw] md:min-h-[20vw] lg:min-h-[15vw] xl:min-h-[10vw] 2xl:min-h-[12vw]"
+            containerClassName="rounded-lg"
             title={skill.title}
             href=""
             body={
               <ul>
                 {skill.body.map((item, index) => (
-                  <li key={index}>{item}</li>
+                  <li className="py-1" key={index}>{item}</li>
                 ))}
               </ul>
             }

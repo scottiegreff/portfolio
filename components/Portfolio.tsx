@@ -60,7 +60,7 @@ const projects: Project[] = [
   },
   {
     title: "John Conway's Game of Life - Local",
-    description: "A simulation model of John Conway's, Game of Life.",
+    description: "A simulation model of John Conway's infamous Game of Life.",
     image: gol,
     link: "localhost:3000",
     techStack:
@@ -78,9 +78,12 @@ export default function Portfolio() {
         <Carousel className="w-[60vw] md:w-full max-w-5xl">
           <CarouselPrevious />
           <CarouselNext />
-          <CarouselContent className="-ml-10 md:ml-10">
+          <CarouselContent className="-ml-0 lg:ml-50">
             {projects.map((project, index) => (
-              <CarouselItem className="flex flex-col md:max-w-2xl" key={index}>
+              <CarouselItem
+                className="flex flex-col md:max-w-lg me-5 lg:me-20"
+                key={index}
+              >
                 <Link className="my-10" target="_blank" href={project.link}>
                   <Image
                     className="rounded-3xl hover:shadow-2xl hover:border hover:border-red-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
@@ -88,17 +91,15 @@ export default function Portfolio() {
                     alt={project.title}
                   />
                 </Link>
-                <h2 className="text-white text-xl mx-auto text-center w-[50vw] mb-5">
+                <h2 className="text-white text-xl text-center mb-5 mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw]">
                   {project.title}
                 </h2>
-                <p className="text-white font-thin my-1 mx-auto text-center w-[50vw] md:w-[30vw] mb-5">
+                <p className="text-white font-thin my-1 mx-auto text-center w-[50vw] md:w-[40vw] xl:w-[20vw] mb-10">
                   {project.description}
                 </p>
-                <div className="mx-auto flex flex-col justify-center items-center md:flex-row md:justify-center md:items-start">
-                  <span className="font-bold text-white md:w-[7vw]">
-                    Tech Stack:
-                  </span>{" "}
-                  <span className="font-thin text-white w-[50vw] md:w-[30vw]">
+                <div className="mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw] mb-10">
+                  <span className="font-bold text-white">Tech Stack:</span>{" "}
+                  <span className="font-thin text-white">
                     {project.techStack}
                   </span>
                 </div>
