@@ -198,18 +198,20 @@ export default function HardSkills() {
           Here are some hard skills I employ...
         </h4>
       </div>
-      <div className="flex flex-wrap justify-center items-center mt-10">
+      <div className="flex flex-row flex-wrap justify-around items-center mt-10">
         {hardSkills.map((skill, index) => (
           <PinContainer
             key={index}
-            className="flex flex-row justify-center items-center min-h-[40vw] md:min-h-[20vw] lg:min-h-[15vw] xl:min-h-[10vw] 2xl:min-h-[12vw]"
+            className="flex flex-col justify-center items-start ps-2 min-h-[40vw] md:min-h-[20vw] lg:min-h-[15vw] xl:min-h-[10vw] 2xl:min-h-[12vw]"
             containerClassName="rounded-lg"
             title={skill.title}
             href=""
             body={
               <ul>
                 {skill.body.map((item, index) => (
-                  <li className="py-1" key={index}>{item}</li>
+                  <li className="py-1" key={index}>
+                    {item}
+                  </li>
                 ))}
               </ul>
             }

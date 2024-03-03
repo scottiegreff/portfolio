@@ -20,14 +20,21 @@ export default function About() {
 
         <div className="flex flex-col justify-around items-center">
           <p className="text-1.5xl md:text-2xl text-white font-thin mx-10 mb-10">
-            Scott is a full-stack developer with a desire for creating
-            progressive and functional web applications. He is a graduate of
-            Langara where he earned a degree in Computer Science. Scott has a
-            strong foundation in software development and is always learning new
-            technologies to improve his skills. He is a dedicated and
-            hardworking individual who is committed to delivering high-quality
-            products. Scott is a team player who is always looking to
-            collaborate with others to create engaging software.
+            As a dynamic and innovative web developer, my passion lies at the
+            intersection of cutting-edge technology and creative solutions. I am
+            dedicated to lifelong learning, constantly updating my skills to
+            stay ahead in the ever- evolving tech landscape. My problem-solving
+            abilities are matched by a robust set of soft skills that make me an
+            invaluable team player. I am eager to genuinely listen and learn
+            from others and contribute my honest insights only when I believe it
+            will aid in resolving challenges. With a personal interest in music,
+            cooking, and travel, I bring a sense of creativity to the development process,
+            ensuring that code not only functions but engages. I am driven by a
+            relentless pursuit of excellence, taking pride in writing clean,
+            efficient code and seeing tasks through to completion. As I seek to
+            contribute to a forward-thinking team, my goal is to deliver
+            high-quality web solutions that drive innovation and exceed
+            expectations.
           </p>
         </div>
       </div>

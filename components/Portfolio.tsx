@@ -94,7 +94,7 @@ export default function Portfolio() {
                 <h2 className="text-white text-xl text-center mb-5 mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw]">
                   {project.title}
                 </h2>
-                <p className="text-white font-thin my-1 mx-auto text-center w-[50vw] md:w-[40vw] xl:w-[20vw] mb-10">
+                <p className="text-white font-thin my-1 mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw] mb-10">
                   {project.description}
                 </p>
                 <div className="mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw] mb-10">
