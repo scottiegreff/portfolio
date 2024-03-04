@@ -20,7 +20,7 @@ export default function Home() {
       <About />
       <hr className="my-20" />
       <Portfolio />
-      <hr className="my-10" />
+      <hr className="my-[8vh]" />
       <Footer />
     </main>
   );

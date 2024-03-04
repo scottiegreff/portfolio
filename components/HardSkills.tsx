@@ -26,8 +26,8 @@ export default function HardSkills() {
       body: ["React", "NextJS", "Express", `Django\u002a`],
     },
     {
-      title: "CSS Frameworks",
-      body: ["Tailwind", "Bootstrap"],
+      title: "CSS",
+      body: ["CSS", "Tailwind", "Bootstrap", "SASS"],
     },
     {
       title: "Component Libraries",
@@ -149,7 +149,10 @@ export default function HardSkills() {
       body: [
         "Functional Programming",
         "Object-Oriented Programming",
-        `Procedural Programming\u002a`,
+        "Procedural Programming",
+        "Declarative Programming",
+        "Imperative Programming",
+        "Event-Driven Programming",
       ],
     },
     // {title: "Testing", body: ["Jest"]},
