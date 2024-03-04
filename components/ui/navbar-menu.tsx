@@ -47,7 +47,7 @@ export const MenuItem = ({
               >
                 <motion.div
                   layout // layout ensures smooth animation
-                  className="w-[30vw] p-4"
+                  className="w-[40vw] lg:h-[20vh] md:w-[20vw] md:p-4"
                 >
                   {children}
                 </motion.div>
@@ -70,7 +70,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-[#fce7f3] bg-opacity-5 shadow-input flex justify-center space-x-20 px-2 py-2 "
+      className="relative rounded-full text-xs md:text-sm border border-transparent dark:bg-black dark:border-white/[0.2] bg-[#fce7f3] bg-opacity-5 shadow-input flex justify-center space-x-5 sm:space-x-20 px-2 py-2 "
     >
       {children}
     </nav>
@@ -95,13 +95,13 @@ export const ProductItem = ({
         width={140}
         height={70}
         alt={title}
-        className="flex-shrink-0 rounded-md shadow-2xl"
+        className="flex-shrink-0 md:rounded-md shadow-2xl"
       />
       <div>
-        <h4 className="text-xl font-bold mb-1 text-slate-800 dark:text-white">
+        <h4 className="text-lg md:text-xl font-bold mb-1 text-slate-800 dark:text-white">
           {title}
         </h4>
-        <p className="text-slate-700 text-sm w-[10rem] dark:text-neutral-300">
+        <p className="text-slate-700 text-xs md:text-sm w-[5rem] dark:text-neutral-300">
           {description}
         </p>
       </div>
