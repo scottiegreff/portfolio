@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { NavbarDemo } from "@/components/Navbar";
 import HardSkills from "../components/HardSkills";
 import Portfolio from "../components/Portfolio";
 import About from "../components/About";
@@ -14,6 +15,7 @@ export default function Home() {
           className="w-[100vw] h-[100vh]"
         ></iframe>
       </div>
+      <NavbarDemo />
       <hr />
       <HardSkills />
       <hr className="mt-20 mb-10 md:mb-20" />

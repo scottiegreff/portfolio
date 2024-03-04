@@ -190,41 +190,44 @@ export default function HardSkills() {
 
   return (
     <>
-      <div className="mt-10 lg:mt-20">
-        <h4 className="text-white text-[1.75rem] md:text-[3rem] font-bold mb-10 md:ms-5">
-          Developers need to utilize many software tools.
-        </h4>
-      </div>
+      <section id="hardSkills">
+        <div className="h-5"></div>
+        <div className="mt-10 lg:mt-20">
+          <h4 className="text-white text-[1.75rem] md:text-[3rem] font-bold mb-10 md:ms-5">
+            Developers need to utilize many software tools.
+          </h4>
+        </div>
 
-      <div className="mt-10 lg:mt-20">
-        <h4 className="text-white text-[1.5rem] md:text-[2.25rem] font-bold mb-15 md:ms-5">
-          Here are some hard skills I employ...
-        </h4>
-      </div>
-      <div className="flex flex-row flex-wrap justify-around items-center mt-10">
-        {hardSkills.map((skill, index) => (
-          <PinContainer
-            key={index}
-            className="flex flex-col justify-center items-start ps-2 min-h-[40vw] md:min-h-[20vw] lg:min-h-[15vw] xl:min-h-[10vw] 2xl:min-h-[12vw]"
-            containerClassName="rounded-lg"
-            title={skill.title}
-            href=""
-            body={
-              <ul>
-                {skill.body.map((item, index) => (
-                  <li className="py-1" key={index}>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            }
-          />
-        ))}
-      </div>
+        <div className="mt-10 lg:mt-20">
+          <h4 className="text-white text-[1.5rem] md:text-[2.25rem] font-bold mb-15 md:ms-5">
+            Here are some hard skills I employ...
+          </h4>
+        </div>
+        <div className="flex flex-row flex-wrap justify-around items-center mt-10">
+          {hardSkills.map((skill, index) => (
+            <PinContainer
+              key={index}
+              className="flex flex-col justify-center items-start ps-2 min-h-[40vw] md:min-h-[20vw] lg:min-h-[15vw] xl:min-h-[10vw] 2xl:min-h-[12vw]"
+              containerClassName="rounded-lg"
+              title={skill.title}
+              href=""
+              body={
+                <ul>
+                  {skill.body.map((item, index) => (
+                    <li className="py-1" key={index}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              }
+            />
+          ))}
+        </div>
 
-      <p className="text-white text-[1rem] md:text-[1.5rem] font-thin my-10 mx-20 ">
-        {`${"*"} == always learning more!`}
-      </p>
+        <p className="text-white text-[1rem] md:text-[1.5rem] font-thin my-10 mx-20 ">
+          {`${"*"} == always learning more!`}
+        </p>
+      </section>
     </>
   );
 }

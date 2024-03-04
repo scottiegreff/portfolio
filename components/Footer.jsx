@@ -13,7 +13,7 @@ export default function Footer() {
         <CiInstagram className="text-5xl text-white mx-auto" />
       </a>
 
-      <div className="text-white font-light flex flex-col justify-center my-10 p-3 items-center">
+      <div className="text-white font-light flex flex-col justify-center my-5 p-3 items-center">
         <p className="text-xs md:text-medium">Scott Greff</p>
         <p className="text-xs md:text-medium">© 2024 All rights reserved.</p>
 
