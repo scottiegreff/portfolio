@@ -51,7 +51,7 @@ function Navbar({ className }: { className?: string }) {
               title="Portfolio"
               href="#portfolio"
               src={portfolio}
-              description="Scott's Portfolio of Work"
+              description="Scott's Portfolio Work"
             />
           </div>
         </MenuItem>
