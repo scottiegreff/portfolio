@@ -48,7 +48,7 @@ const projects: Project[] = [
     description: "Search and discover art from NY's famous MET Museum.",
     image: met,
     link: "localhost:3000",
-    techStack: "React, Tailwind CSS, TypeScript, Prisma, PostgreSQL",
+    techStack: "React, Tailwind CSS, TypeScript, MET API",
   },
   {
     title: "Full Stack Bakery App - Local",
@@ -56,7 +56,7 @@ const projects: Project[] = [
     image: bakery,
     link: "localhost:3000",
     techStack:
-      "React, MVC Architecture, Express, Nodemon, Axios, MongoDB, Local Storage",
+      "React, MVC Architecture, Express, Nodemon, Axios, MongoDB",
   },
   {
     title: "John Conway's Game of Life - Local",

@@ -17,12 +17,12 @@ export default function Home() {
       </div>
       <NavbarDemo />
       <hr />
-      <HardSkills />
-      <hr className="mt-20 mb-10 md:mb-20" />
-      <About />
-      <hr className="my-20" />
       <Portfolio />
       <hr className="my-[8vh]" />
+      <About />
+      <hr className="my-20" />
+      <HardSkills />
+      <hr className="mt-20 mb-10 md:mb-20" />
       <Footer />
     </main>
   );

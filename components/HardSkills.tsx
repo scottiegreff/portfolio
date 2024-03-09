@@ -17,8 +17,8 @@ export default function HardSkills() {
         "Python",
         "Java",
         "C++",
+        "PHP",
         "SQL",
-        `PHP\u002a`,
       ],
     },
     {
