@@ -40,20 +40,21 @@ export default function PortfolioAccordion({
           {project.codeExample.map((code, index) => (
             <Accordion type="single" collapsible>
               <AccordionItem key={index} value="item-1">
-                <AccordionTrigger>
-                  <div className="text-white text-md font-light my-1 w-[50vw] md:w-[40vw] xl:w-[20vw] py-2 text-left">
+                <AccordionTrigger key={index}>
+                  <div key={index} className="text-white text-md font-light my-1 w-[50vw] md:w-[40vw] xl:w-[20vw] py-2 text-left">
                     {code.skill}
                   </div>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <div className="text-white text-md font-light my-1 mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw]">
+                  <div key={index} className="text-white text-md font-light my-1 mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw]">
                     {code.description}
                   </div>
-                  <div className="text-white text-md font-light my-1 mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw] mb-10">
+                  <div key={index} className="text-white text-md font-light my-1 mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw] mb-10">
                     <a
                       className="text-md font-bold my-1 mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw] text-red-100 hover:text-red-400 hover:cursor-pointer"
                       href={code.link}
                       target="_blank"
+                      key={index}
                     >
                       Github Code example for: {code.skill}.
                     </a>
