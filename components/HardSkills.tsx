@@ -56,7 +56,10 @@ export default function HardSkills() {
         "Providers (Google, Facebook)",
       ],
     },
-    { title: "State Management", body: ["Redux", "Context", "Zustand"] },
+    {
+      title: "State Management",
+      body: ["Redux Toolkit", "Context", "Zustand"],
+    },
     {
       title: "APIs",
       body: [
@@ -135,13 +138,7 @@ export default function HardSkills() {
     },
     {
       title: "Methodologies",
-      body: [
-        "CI/CD",
-        "Agile Development",
-        "Scrum",
-        "Jira",
-        `Waterfall\u002a`,
-      ],
+      body: ["CI/CD", "Agile Development", "Scrum", "Jira", `Waterfall\u002a`],
     },
     {
       title: "Coding Paradigms",

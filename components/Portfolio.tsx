@@ -1,12 +1,10 @@
 import * as React from "react";
-import Image, { StaticImageData } from "next/image";
-import recipe from "../public/ai_world_recipes.jpg";
-import photography from "../public/analissa_longoria.jpg";
-import met from "../public/met.jpg";
-import gol from "../public/gol.jpg";
-import bakery from "../public/bakery.jpg";
+import Image from "next/image";
 
+import { Project } from "@/app/types/Project";
+import PortfolioAccordion from "./PortfolioAccordion";
 import { Card, CardContent } from "@/components/ui/card";
+import { Projects } from "@/components/Projects";
 import {
   Carousel,
   CarouselContent,
@@ -18,55 +16,7 @@ import { Button } from "./ui/button";
 import { ButtonIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
-type Project = {
-  title: string;
-  description: string;
-  image: StaticImageData;
-  link: string;
-  techStack: string;
-};
-const projects: Project[] = [
-  {
-    title: "AI Recipe App - Live",
-    description:
-      "An AI recipe app that lets you discover and save world recipes based on your dietary preferences.",
-    image: recipe,
-    link: "https://ai-world-recipes.vercel.app/",
-    techStack:
-      "Next.js, TypeScript, Tailwind CSS, Auth, SMTP, PostgreSQL, Prisma, ChatGPT API, Vercel Deployment",
-  },
-  {
-    title: "Analissa Longoria Photography - Live",
-    description:
-      "A photographers work that features fashion and lifestyle. Featured in many magazines and brands.",
-    image: photography,
-    link: "http://analissalongoria.com/",
-    techStack: "Vanilla JavaScript, HTML, CSS, PHP, FTP Server Deployment",
-  },
-  {
-    title: "MET Art Museum - Local",
-    description: "Search and discover art from NY's famous MET Museum.",
-    image: met,
-    link: "localhost:3000",
-    techStack: "React, Tailwind CSS, TypeScript, MET API",
-  },
-  {
-    title: "Full Stack Bakery App - Local",
-    description: "A mock bakery app that lets you order and track your orders.",
-    image: bakery,
-    link: "localhost:3000",
-    techStack:
-      "React, MVC Architecture, Express, Nodemon, Axios, MongoDB",
-  },
-  {
-    title: "John Conway's Game of Life - Local",
-    description: "A simulation model of John Conway's infamous Game of Life.",
-    image: gol,
-    link: "localhost:3000",
-    techStack:
-      "Vanilla JavaScript, HTML, Bootstrap, Object-Oriented-Programming",
-  },
-];
+const projects: Project[] = Projects;
 
 export default function Portfolio() {
   return (
@@ -93,17 +43,11 @@ export default function Portfolio() {
                       alt={project.title}
                     />
                   </Link>
-                  <h2 className="text-white text-xl text-center mb-5 mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw]">
+                  <Link href={project.link} target="_blank" className="text-white text-xl text-center mb-5 mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw]">
                     {project.title}
-                  </h2>
-                  <p className="text-white font-thin my-1 mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw] mb-10">
-                    {project.description}
-                  </p>
+                  </Link>
                   <div className="mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw] mb-10">
-                    <span className="font-bold text-white">Tech Stack:</span>{" "}
-                    <span className="font-thin text-white">
-                      {project.techStack}
-                    </span>
+                    <PortfolioAccordion project={project} index={index} />
                   </div>
                   <div className="my-10 mx-auto text-white border border-white p-3 flex justify-center items-center w-5 h-5 rounded-full">
                     {index + 1}
