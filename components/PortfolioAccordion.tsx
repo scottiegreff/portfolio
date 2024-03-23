@@ -39,7 +39,7 @@ export default function PortfolioAccordion({
         <AccordionContent className="text-white text-md font-light mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw]">
           {project.codeExample.map((code, index) => (
             <Accordion type="single" collapsible>
-              <AccordionItem value="item-1">
+              <AccordionItem key={index} value="item-1">
                 <AccordionTrigger>
                   <div className="text-white text-md font-light my-1 w-[50vw] md:w-[40vw] xl:w-[20vw] py-2 text-left">
                     {code.skill}
