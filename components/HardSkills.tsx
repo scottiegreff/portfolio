@@ -49,7 +49,7 @@ export default function HardSkills() {
       body: [
         "OAuth",
         "Auth.js",
-        `Clerk\u002a`,
+        "Clerk",
         "Session Based",
         "Token Based ( JWT / JWE )",
         "Adapters",

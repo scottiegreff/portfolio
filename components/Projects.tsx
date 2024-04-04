@@ -1,6 +1,8 @@
 import React from "react";
 import { Project } from "@/app/types/Project";
 import recipe from "../public/ai_world_recipes.jpg";
+import admin from "../public/ecomm-admin.jpg";
+import store from "../public/ecomm-store.jpg";
 import photography from "../public/analissa_longoria.jpg";
 import met from "../public/met.jpg";
 import gol from "../public/gol.jpg";
@@ -14,7 +16,7 @@ export const Projects: Project[] = [
     image: recipe,
     link: "https://ai-world-recipes.vercel.app/",
     techStack:
-      "Next.js, TypeScript, Tailwind CSS, Auth, SMTP, PostgreSQL, Prisma, ChatGPT API, Vercel Deployment",
+      "Next.js, TypeScript, Tailwind, Auth, SMTP, PostgreSQL, Prisma, ChatGPT API, Vercel Deployment",
     codeExample: [
       {
         skill: "Asynchronous Code",
@@ -94,6 +96,81 @@ export const Projects: Project[] = [
           "Enhancing user experience by providing real-time feedback on actions, such as notifying users with success/error toasts, displaying spinner indicators during data fetching, implementing skeletons for content loading, and offering feedback on the security level of users' passwords.",
         image: "http://example.com/react.png",
         link: "https://github.com/scottiegreff/ai-world-recipes/blob/main/app/components/PasswordStrength.tsx",
+      },
+    ],
+  },
+  {
+    title: "Ecommerce Admin Site",
+    description:
+      "An e-commerce admin site that lets you create multiple stores to manage products AND/OR services. It creates custom products (colors and sizes, ect.) and stores them in a revalidating DB. The service side allows the admin to set multiple staff schedules and then create the services offered that fit withing the staff's timetables.",
+    image: admin,
+    link: "https://ecommerce-admin-scottiegreffs-projects.vercel.app/",
+    techStack:
+      "Next.js, TypeScript, Tailwind, Stripe, Clerk, PostgreSQL, Prisma, Vercel Deployment",
+    codeExample: [
+      {
+        skill: "Vanilla JavaScript",
+        description: "Used for interacting with the user interface",
+        image: "",
+        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/pages/photography.html",
+      },
+      {
+        skill: "HTML",
+        description:
+          "Used for building the document structure of the user interface",
+        image: "",
+        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/pages/video.html",
+      },
+      {
+        skill: "Cascading Style Sheets (CSS)",
+        description: "Used for styling user interface",
+        image: "",
+        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/style.css",
+      },
+
+      {
+        skill: "MailChimp API",
+        description: "Used for sending emails to clients",
+        image: "",
+        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/pages/contact2.html",
+      },
+    ],
+  },
+  {
+    title: "Ecommerce Store Front",
+    description:
+      "An e-commerce store front that connects to the admin site. Allowing customers to view, place products and services in their cart and pay with real money via the Stripe API.",
+    image: store,
+    link: "https://ecommerce-store-scottiegreffs-projects.vercel.app/",
+    techStack:
+      "Next.js, TypeScript, Tailwind, Stripe, Clerk, PostgreSQL, Prisma, Vercel Deployment",
+    codeExample: [
+      {
+        skill: "Ecommerce Store Front",
+        description:
+          "An e-commerce store front that connects to the admin site. Allowing customers to view, place products and services in their cart and pay with real money via the Stripe API.",
+        image: "",
+        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/pages/photography.html",
+      },
+      {
+        skill: "HTML",
+        description:
+          "Used for building the document structure of the user interface",
+        image: "",
+        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/pages/video.html",
+      },
+      {
+        skill: "Cascading Style Sheets (CSS)",
+        description: "Used for styling user interface",
+        image: "",
+        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/style.css",
+      },
+
+      {
+        skill: "MailChimp API",
+        description: "Used for sending emails to clients",
+        image: "",
+        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/pages/contact2.html",
       },
     ],
   },
