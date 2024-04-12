@@ -5,6 +5,7 @@ import Portfolio from "../components/Portfolio";
 import About from "../components/About";
 import Footer from "../components/Footer";
 
+//
 export default function Home() {
   return (
     <main className="mb-20">
