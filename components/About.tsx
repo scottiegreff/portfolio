@@ -43,7 +43,7 @@ export default function About() {
         </div>
         <div className="flex justify-center items-center">
           <a
-            href="/scott_greff_resume_update.pdf"
+            href="/scott_greff_resume.pdf"
             download
             className="px-4 py-3 border border-white text-sm font-medium rounded-md text-white bg-red-400 hover:bg-red-500 hover:border-transparent transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-1"
           >
