@@ -102,38 +102,63 @@ export const Projects: Project[] = [
   {
     title: "Ecommerce Admin Site",
     description:
-      "An e-commerce admin site that lets you create multiple stores to manage products AND/OR services. It creates custom products (colors and sizes, ect.) and stores them in a revalidating DB. The service side allows the admin to set multiple staff schedules and then create the services offered that fit withing the staff's timetables.",
+      "An e-commerce admin site that lets you create multiple stores to manage products AND/OR services. The Admin creates customizable products (colors and sizes, ect.), then stores the products with the correlating store's id in a revalidating DB. The service side allows the admin to set multiple staff work schedules. Create the services offered by the store, and checks if the staff timetable allows a customer to book the service requested.",
     image: admin,
     link: "https://ecommerce-admin-scottiegreffs-projects.vercel.app/",
     techStack:
       "Next.js, TypeScript, Tailwind, Stripe, Clerk, PostgreSQL, Prisma, Vercel Deployment",
     codeExample: [
       {
-        skill: "Vanilla JavaScript",
-        description: "Used for interacting with the user interface",
+        skill: "App-Router ",
+        description: "Used for routing between pages with dynamic store ids, product ids ect. As well as protecting routes from unauthorized users.",
         image: "",
-        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/pages/photography.html",
+        link: "https://github.com/scottiegreff/ecommerce-admin/tree/master/app",
       },
       {
-        skill: "HTML",
+        skill: "Authentication & Authorization",
         description:
-          "Used for building the document structure of the user interface",
-        image: "",
-        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/pages/video.html",
+          "Leveraged the Clerk API for auth which allows for sign-in through credentials and providers like Google's one click sign in. Once connected to the PostGres DB the User's table is populated by Clerk's adapter.",
+        image: "http://example.com/react.png",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/api/%5BstoreId%5D/products/route.ts",
       },
       {
-        skill: "Cascading Style Sheets (CSS)",
-        description: "Used for styling user interface",
+        skill: "Prisma ORM",
+        description: "Used for defining the schema of the PostGres DB. This allows for the creation of a type-safe client for the database.",
         image: "",
-        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/style.css",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/actions/get-graph-revenue.ts",
       },
+      {
+        skill: "Revalidating DB",
+        description: "Keeps the DB data fresh with with every change requested by the admin and the store front. This provides the the store and the admin to have current and reliable information.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/orders/page.tsx",
+      },
+      {
+        skill: "System Design",
+        description: "Designing a system with scalability and maintainability is needed. Prior to coding, a well-structured UML diagram is crucial. A high-level system design creates development agility by preventing tightly coupled code and promoting reusability, leading to a more dynamic and maintainable system.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/README.md",
+      },
+      {
+        skill: "TypeScript",
+        description: "Uses strict typing for many custom types needed to control the complexity of store marketing, products, employees, timetables, etc.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/categories/components/columns.tsx",
+      },
+      {
+        skill: "Zod",
+        description: "Used for validating the incoming data from the client. This ensures the data is correct before it is sent to the server.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/colors/%5BcolorId%5D/components/color-form.tsx",
+      },
+      {
+        skill: "Zustand",
+        description: "Used for global state management. This allows for the sharing of state between components and pages.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/hooks/use-store-modal.tsx",
 
-      {
-        skill: "MailChimp API",
-        description: "Used for sending emails to clients",
-        image: "",
-        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/pages/contact2.html",
       },
+  
     ],
   },
   {
@@ -146,32 +171,62 @@ export const Projects: Project[] = [
       "Next.js, TypeScript, Tailwind, Stripe, Clerk, PostgreSQL, Prisma, Vercel Deployment",
     codeExample: [
       {
-        skill: "Ecommerce Store Front",
-        description:
-          "An e-commerce store front that connects to the admin site. Allowing customers to view, place products and services in their cart and pay with real money via the Stripe API.",
+        skill: "App-Router ",
+        description: "Used for routing between pages with dynamic store ids, product ids ect. As well as protecting routes from unauthorized users.",
         image: "",
-        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/pages/photography.html",
+        link: "https://github.com/scottiegreff/ecommerce-admin/tree/master/app",
       },
       {
-        skill: "HTML",
+        skill: "Authentication & Authorization",
         description:
-          "Used for building the document structure of the user interface",
-        image: "",
-        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/pages/video.html",
+          "Leveraged the Clerk API for auth which allows for sign-in through credentials and providers like Google's one click sign in. Once connected to the PostGres DB the User's table is populated by Clerk's adapter.",
+        image: "http://example.com/react.png",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/api/%5BstoreId%5D/products/route.ts",
       },
       {
-        skill: "Cascading Style Sheets (CSS)",
-        description: "Used for styling user interface",
+        skill: "Prisma ORM",
+        description: "Used for defining the schema of the PostGres DB. This allows for the creation of a type-safe client for the database.",
         image: "",
-        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/style.css",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/actions/get-graph-revenue.ts",
       },
+      {
+        skill: "Revalidating DB",
+        description: "Keeps the DB data fresh with with every change requested by the admin and the store front. This provides the the store and the admin to have current and reliable information.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/orders/page.tsx",
+      },
+      {
+        skill: "Stripe API",
+        description: "Used for processing payments from the customer. This allows for the customer to pay with real money.",
+        image: "",
+        link: "",
+      },
+      {
+        skill: "System Design",
+        description: "Designed the system to be scalable and maintainable. This allows for the system to grow with the business.",
+        image: "",
+        link: "",
+      },
+      {
+        skill: "TypeScript",
+        description: "Uses strict typing for many custom types needed to control the complexity of store marketing, products, employees, timetables, etc.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/categories/components/columns.tsx",
+      },
+      {
+        skill: "Zod",
+        description: "Used for validating the incoming data from the client. This ensures the data is correct before it is sent to the server.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/colors/%5BcolorId%5D/components/color-form.tsx",
+      },
+      {
+        skill: "Zustand",
+        description: "Used for global state management. This allows for the sharing of state between components and pages.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/hooks/use-store-modal.tsx",
 
-      {
-        skill: "MailChimp API",
-        description: "Used for sending emails to clients",
-        image: "",
-        link: "https://github.com/scottiegreff/analissa-longoria/blob/main/pages/contact2.html",
       },
+   
     ],
   },
   {
@@ -211,22 +266,22 @@ export const Projects: Project[] = [
       },
     ],
   },
-  {
-    title: "MET Art Museum - Local",
-    description: "Search and discover art from NY's famous MET Museum.",
-    image: met,
-    link: "localhost:3000",
-    techStack: "React, Tailwind CSS, TypeScript, MET API",
-    codeExample: [
-      {
-        skill: "React",
-        description: "Used for building user interface",
-        image: "http://example.com/react.png",
-        link: "http://example.com/react",
-      },
-      // More code examples...
-    ],
-  },
+  // {
+  //   title: "MET Art Museum - Local",
+  //   description: "Search and discover art from NY's famous MET Museum.",
+  //   image: met,
+  //   link: "localhost:3000",
+  //   techStack: "React, Tailwind CSS, TypeScript, MET API",
+  //   codeExample: [
+  //     {
+  //       skill: "React",
+  //       description: "Used for building user interface",
+  //       image: "http://example.com/react.png",
+  //       link: "http://example.com/react",
+  //     },
+  //     // More code examples...
+  //   ],
+  // },
   {
     title: "Full Stack Bakery App - Local",
     description: "A mock bakery app that lets you order and track your orders.",
@@ -237,7 +292,7 @@ export const Projects: Project[] = [
       {
         skill: "React",
         description: "Used for building user interface",
-        image: "http://example.com/react.png",
+        image: "",
         link: "http://example.com/react",
       },
       // More code examples...
@@ -254,19 +309,19 @@ export const Projects: Project[] = [
       {
         skill: "React",
         description: "Used for building user interface",
-        image: "http://example.com/react.png",
+        image: "",
         link: "http://example.com/react",
       },
       {
         skill: "React",
         description: "Used for building user interface",
-        image: "http://example.com/react.png",
+        image: "",
         link: "http://example.com/react",
       },
       {
         skill: "React",
         description: "Used for building user interface",
-        image: "http://example.com/react.png",
+        image: "",
         link: "http://example.com/react",
       },
     ],

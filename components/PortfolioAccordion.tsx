@@ -17,10 +17,10 @@ export default function PortfolioAccordion({
   return (
     <Accordion type="single" collapsible>
       <AccordionItem value="item-1">
-        <AccordionTrigger className="text-white text-md font-light my-1 mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw] mb-5">
+        <AccordionTrigger className="text-white text-md font-light my-1 mx-auto mb-5">
           Description
         </AccordionTrigger>
-        <AccordionContent className="text-white text-md font-light my-1 mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw] mb-5">
+        <AccordionContent className="text-white text-md font-light my-1 mx-auto mb-5">
           {project.description}
         </AccordionContent>
       </AccordionItem>
