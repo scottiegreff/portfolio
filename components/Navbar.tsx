@@ -23,15 +23,15 @@ export function NavbarDemo() {
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
-    <div className={cn("fixed top-10 md:max-w-2xl z-50 mx-auto", className)}>
+    <div className={cn("fixed top-10 md:max-w-2xl z-50 mx-auto ", className)}>
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="HARD SKILLS">
-          <div className="text-sm grid grid-cols-2 gap-5 md:gap-10 md:p-1">
+        <MenuItem setActive={setActive} active={active} item="PORTFOLIO">
+          <div className=" text-sm grid grid-cols-2 gap-5 md:gap-10 md:p-1">
             <ProductItem
-              title="Hard Skills"
-              href="#hardSkills"
-              src={hardSkills}
-              description="List of Scott's Hard Skills"
+              title="Portfolio"
+              href="#portfolio"
+              src={portfolio}
+              description="Scott's Portfolio Work"
             />
           </div>
         </MenuItem>
@@ -45,13 +45,13 @@ function Navbar({ className }: { className?: string }) {
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="PORTFOLIO">
-          <div className=" text-sm grid grid-cols-2 gap-5 md:gap-10 md:p-1">
+        <MenuItem setActive={setActive} active={active} item="HARD SKILLS">
+          <div className="text-sm grid grid-cols-2 gap-5 md:gap-10 md:p-1 ">
             <ProductItem
-              title="Portfolio"
-              href="#portfolio"
-              src={portfolio}
-              description="Scott's Portfolio Work"
+              title="Hard Skills"
+              href="#hardSkills"
+              src={hardSkills}
+              description="List of Scott's Hard Skills"
             />
           </div>
         </MenuItem>

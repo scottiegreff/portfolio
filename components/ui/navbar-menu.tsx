@@ -28,7 +28,7 @@ export const MenuItem = ({
     <div onMouseEnter={() => setActive(item)} className="relative">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-white text-[1.15rem] font-medium dark:text-white hover:text-slate-700"
+        className="cursor-pointer text-red-700 p-1 text-[1.15rem] font-medium dark:text-white hover:text-slate-700"
       >
         {item}
       </motion.p>
