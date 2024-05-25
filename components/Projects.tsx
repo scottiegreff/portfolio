@@ -10,6 +10,147 @@ import bakery from "../public/bakery.jpg";
 
 export const Projects: Project[] = [
   {
+    title: "Ecommerce Admin Site",
+    description:
+      "An e-commerce admin site that lets you create multiple stores to manage products AND/OR services. The Admin creates customizable products (colors and sizes, ect.), then stores the products with the correlating store's id in a revalidating DB. The service side allows the admin to set multiple staff work schedules. Create the services offered by the store, and checks if the staff timetable allows a customer to book the service requested.",
+    image: admin,
+    link: "https://ecommerce-admin-scottiegreffs-projects.vercel.app/",
+    techStack:
+      "Next.js, TypeScript, Tailwind, Stripe, Clerk, PostgreSQL, Prisma, Vercel Deployment",
+    codeExample: [
+      {
+        skill: "App-Router ",
+        description:
+          "Used for routing between pages with dynamic store ids, product ids ect. As well as protecting routes from unauthorized users.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/tree/master/app",
+      },
+      {
+        skill: "Authentication & Authorization",
+        description:
+          "Leveraged the Clerk API for auth which allows for sign-in through credentials and providers like Google's one click sign in. Once connected to the PostGres DB the User's table is populated by Clerk's adapter.",
+        image: "http://example.com/react.png",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/api/%5BstoreId%5D/products/route.ts",
+      },
+      {
+        skill: "Prisma ORM",
+        description:
+          "Used for defining the schema of the PostGres DB. This allows for the creation of a type-safe client for the database.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/actions/get-graph-revenue.ts",
+      },
+      {
+        skill: "Revalidating DB",
+        description:
+          "Keeps the DB data fresh with with every change requested by the admin and the store front. This provides the the store and the admin to have current and reliable information.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/orders/page.tsx",
+      },
+      {
+        skill: "System Design",
+        description:
+          "Designing a system with scalability and maintainability is needed. Prior to coding, a well-structured UML diagram is crucial. A high-level system design creates development agility by preventing tightly coupled code and promoting reusability, leading to a more dynamic and maintainable system.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/README.md",
+      },
+      {
+        skill: "TypeScript",
+        description:
+          "Uses strict typing for many custom types needed to control the complexity of store marketing, products, employees, timetables, etc.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/categories/components/columns.tsx",
+      },
+      {
+        skill: "Zod",
+        description:
+          "Used for validating the incoming data from the client. This ensures the data is correct before it is sent to the server.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/colors/%5BcolorId%5D/components/color-form.tsx",
+      },
+      {
+        skill: "Zustand",
+        description:
+          "Used for global state management. This allows for the sharing of state between components and pages.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/hooks/use-store-modal.tsx",
+      },
+    ],
+  },
+  {
+    title: "Ecommerce Store Front",
+    description:
+      "An e-commerce store front that connects to the admin site. Allowing customers to view, place products and services in their cart and pay with real money via the Stripe API.",
+    image: store,
+    link: "https://ecommerce-store-scottiegreffs-projects.vercel.app/",
+    techStack:
+      "Next.js, TypeScript, Tailwind, Stripe, Clerk, PostgreSQL, Prisma, Vercel Deployment",
+    codeExample: [
+      {
+        skill: "App-Router ",
+        description:
+          "Used for routing between pages with dynamic store ids, product ids ect. As well as protecting routes from unauthorized users.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/tree/master/app",
+      },
+      {
+        skill: "Authentication & Authorization",
+        description:
+          "Leveraged the Clerk API for auth which allows for sign-in through credentials and providers like Google's one click sign in. Once connected to the PostGres DB the User's table is populated by Clerk's adapter.",
+        image: "http://example.com/react.png",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/api/%5BstoreId%5D/products/route.ts",
+      },
+      {
+        skill: "Prisma ORM",
+        description:
+          "Used for defining the schema of the PostGres DB. This allows for the creation of a type-safe client for the database.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/actions/get-graph-revenue.ts",
+      },
+      {
+        skill: "Revalidating DB",
+        description:
+          "Keeps the DB data fresh with with every change requested by the admin and the store front. This provides the the store and the admin to have current and reliable information.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/orders/page.tsx",
+      },
+      {
+        skill: "Stripe API",
+        description:
+          "Used for processing payments from the customer. This allows for the customer to pay with real money.",
+        image: "",
+        link: "",
+      },
+      {
+        skill: "System Design",
+        description:
+          "Designed the system to be scalable and maintainable. This allows for the system to grow with the business.",
+        image: "",
+        link: "",
+      },
+      {
+        skill: "TypeScript",
+        description:
+          "Uses strict typing for many custom types needed to control the complexity of store marketing, products, employees, timetables, etc.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/categories/components/columns.tsx",
+      },
+      {
+        skill: "Zod",
+        description:
+          "Used for validating the incoming data from the client. This ensures the data is correct before it is sent to the server.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/colors/%5BcolorId%5D/components/color-form.tsx",
+      },
+      {
+        skill: "Zustand",
+        description:
+          "Used for global state management. This allows for the sharing of state between components and pages.",
+        image: "",
+        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/hooks/use-store-modal.tsx",
+      },
+    ],
+  },
+  {
     title: "AI Recipe App",
     description:
       "An AI recipe app that lets you discover and save world recipes based on your dietary preferences.",
@@ -97,136 +238,6 @@ export const Projects: Project[] = [
         image: "http://example.com/react.png",
         link: "https://github.com/scottiegreff/ai-world-recipes/blob/main/app/components/PasswordStrength.tsx",
       },
-    ],
-  },
-  {
-    title: "Ecommerce Admin Site",
-    description:
-      "An e-commerce admin site that lets you create multiple stores to manage products AND/OR services. The Admin creates customizable products (colors and sizes, ect.), then stores the products with the correlating store's id in a revalidating DB. The service side allows the admin to set multiple staff work schedules. Create the services offered by the store, and checks if the staff timetable allows a customer to book the service requested.",
-    image: admin,
-    link: "https://ecommerce-admin-scottiegreffs-projects.vercel.app/",
-    techStack:
-      "Next.js, TypeScript, Tailwind, Stripe, Clerk, PostgreSQL, Prisma, Vercel Deployment",
-    codeExample: [
-      {
-        skill: "App-Router ",
-        description: "Used for routing between pages with dynamic store ids, product ids ect. As well as protecting routes from unauthorized users.",
-        image: "",
-        link: "https://github.com/scottiegreff/ecommerce-admin/tree/master/app",
-      },
-      {
-        skill: "Authentication & Authorization",
-        description:
-          "Leveraged the Clerk API for auth which allows for sign-in through credentials and providers like Google's one click sign in. Once connected to the PostGres DB the User's table is populated by Clerk's adapter.",
-        image: "http://example.com/react.png",
-        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/api/%5BstoreId%5D/products/route.ts",
-      },
-      {
-        skill: "Prisma ORM",
-        description: "Used for defining the schema of the PostGres DB. This allows for the creation of a type-safe client for the database.",
-        image: "",
-        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/actions/get-graph-revenue.ts",
-      },
-      {
-        skill: "Revalidating DB",
-        description: "Keeps the DB data fresh with with every change requested by the admin and the store front. This provides the the store and the admin to have current and reliable information.",
-        image: "",
-        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/orders/page.tsx",
-      },
-      {
-        skill: "System Design",
-        description: "Designing a system with scalability and maintainability is needed. Prior to coding, a well-structured UML diagram is crucial. A high-level system design creates development agility by preventing tightly coupled code and promoting reusability, leading to a more dynamic and maintainable system.",
-        image: "",
-        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/README.md",
-      },
-      {
-        skill: "TypeScript",
-        description: "Uses strict typing for many custom types needed to control the complexity of store marketing, products, employees, timetables, etc.",
-        image: "",
-        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/categories/components/columns.tsx",
-      },
-      {
-        skill: "Zod",
-        description: "Used for validating the incoming data from the client. This ensures the data is correct before it is sent to the server.",
-        image: "",
-        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/colors/%5BcolorId%5D/components/color-form.tsx",
-      },
-      {
-        skill: "Zustand",
-        description: "Used for global state management. This allows for the sharing of state between components and pages.",
-        image: "",
-        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/hooks/use-store-modal.tsx",
-
-      },
-  
-    ],
-  },
-  {
-    title: "Ecommerce Store Front",
-    description:
-      "An e-commerce store front that connects to the admin site. Allowing customers to view, place products and services in their cart and pay with real money via the Stripe API.",
-    image: store,
-    link: "https://ecommerce-store-scottiegreffs-projects.vercel.app/",
-    techStack:
-      "Next.js, TypeScript, Tailwind, Stripe, Clerk, PostgreSQL, Prisma, Vercel Deployment",
-    codeExample: [
-      {
-        skill: "App-Router ",
-        description: "Used for routing between pages with dynamic store ids, product ids ect. As well as protecting routes from unauthorized users.",
-        image: "",
-        link: "https://github.com/scottiegreff/ecommerce-admin/tree/master/app",
-      },
-      {
-        skill: "Authentication & Authorization",
-        description:
-          "Leveraged the Clerk API for auth which allows for sign-in through credentials and providers like Google's one click sign in. Once connected to the PostGres DB the User's table is populated by Clerk's adapter.",
-        image: "http://example.com/react.png",
-        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/api/%5BstoreId%5D/products/route.ts",
-      },
-      {
-        skill: "Prisma ORM",
-        description: "Used for defining the schema of the PostGres DB. This allows for the creation of a type-safe client for the database.",
-        image: "",
-        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/actions/get-graph-revenue.ts",
-      },
-      {
-        skill: "Revalidating DB",
-        description: "Keeps the DB data fresh with with every change requested by the admin and the store front. This provides the the store and the admin to have current and reliable information.",
-        image: "",
-        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/orders/page.tsx",
-      },
-      {
-        skill: "Stripe API",
-        description: "Used for processing payments from the customer. This allows for the customer to pay with real money.",
-        image: "",
-        link: "",
-      },
-      {
-        skill: "System Design",
-        description: "Designed the system to be scalable and maintainable. This allows for the system to grow with the business.",
-        image: "",
-        link: "",
-      },
-      {
-        skill: "TypeScript",
-        description: "Uses strict typing for many custom types needed to control the complexity of store marketing, products, employees, timetables, etc.",
-        image: "",
-        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/categories/components/columns.tsx",
-      },
-      {
-        skill: "Zod",
-        description: "Used for validating the incoming data from the client. This ensures the data is correct before it is sent to the server.",
-        image: "",
-        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/colors/%5BcolorId%5D/components/color-form.tsx",
-      },
-      {
-        skill: "Zustand",
-        description: "Used for global state management. This allows for the sharing of state between components and pages.",
-        image: "",
-        link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/hooks/use-store-modal.tsx",
-
-      },
-   
     ],
   },
   {
