@@ -81,7 +81,7 @@ export const Projects: Project[] = [
     description:
       "An e-commerce store front that connects to the admin site. Allowing customers to view, place products and services in their cart and pay with real money via the Stripe API.",
     image: store,
-    link: "https://ecommerce-store-scottiegreffs-projects.vercel.app/",
+    link: "https://prisoneroflovestudio.com/",
     techStack:
       "Next.js, TypeScript, Tailwind, Stripe, Clerk, PostgreSQL, Prisma, Vercel Deployment",
     codeExample: [
