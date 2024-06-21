@@ -14,7 +14,7 @@ export const Projects: Project[] = [
     description:
       "An e-commerce admin site that lets you create multiple stores to manage products AND/OR services. The Admin creates customizable products (colors and sizes, ect.), then stores the products with the correlating store's id in a revalidating DB. The service side allows the admin to set multiple staff work schedules. Create the services offered by the store, and checks if the staff timetable allows a customer to book the service requested.",
     image: admin,
-    link: "https://ecommerce-admin-scottiegreffs-projects.vercel.app/",
+    link: "https://sgreff.com",
     techStack:
       "Next.js, TypeScript, Tailwind, Stripe, Clerk, PostgreSQL, Prisma, Vercel Deployment",
     codeExample: [
