@@ -9,7 +9,7 @@ export default function About() {
         <div className="h-20"></div>
         <div className="flex flex-col justify-start items-center">
           <h1 className="text-white text-5xl">ABOUT</h1>
-          <h1 className="text-white text-3xl font-thin mt-5 mb-5 md:mb-10">
+          <h1 className="text-white text-3xl font-medium mt-5 mb-5 md:mb-10">
             Scott Greff
           </h1>
         </div>
@@ -21,7 +21,7 @@ export default function About() {
           ></Image>
 
           <div className="flex flex-col justify-around items-center">
-            <p className="text-1.5xl md:text-[1.25rem] text-white font-thin mx-10 mb-10">
+            <p className="text-1.5xl md:text-[1.25rem] text-white font-medium mx-10 mb-10">
               As a dynamic and innovative web developer, my passion lies at the
               intersection of cutting-edge technology and creative solutions. I
               am dedicated to lifelong learning, constantly updating my skills

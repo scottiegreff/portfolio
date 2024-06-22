@@ -43,7 +43,7 @@ export default function Portfolio() {
                       alt={project.title}
                     />
                   </Link>
-                  <Link href={project.link} target="_blank" className="text-white text-xl text-center mb-5 mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw]">
+                  <Link href={project.link} target="_blank" className="text-white text-xl font-semibold text-center mb-5 mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw]">
                     {project.title}
                   </Link>
                   <div className="mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw] mb-10">
