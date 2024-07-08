@@ -47,6 +47,9 @@ export default function Portfolio() {
                   className="flex flex-col md:max-w-lg me-5 lg:me-20"
                   key={index}
                 >
+                  <div className="my-10 mx-auto text-white border border-white p-3 flex justify-center items-center w-5 h-5 rounded-full">
+                    {index + 1}
+                  </div>
                   <Link className="my-10" target="_blank" href={project.link}>
                     <Image
                       className="rounded-3xl hover:shadow-2xl hover:border hover:border-red-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-103 cursor-pointer"
@@ -63,9 +66,6 @@ export default function Portfolio() {
                   </Link>
                   <div className="mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw] mb-10">
                     <PortfolioAccordion project={project} index={index} />
-                  </div>
-                  <div className="my-10 mx-auto text-white border border-white p-3 flex justify-center items-center w-5 h-5 rounded-full">
-                    {index + 1}
                   </div>
                 </CarouselItem>
               ))}
