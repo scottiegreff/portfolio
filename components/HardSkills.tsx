@@ -220,9 +220,9 @@ export default function HardSkills() {
           ))}
         </div>
 
-        <p className="text-white text-[1rem] md:text-[1.5rem] font-thin my-10 mx-20 ">
+        {/* <p className="text-white text-[1rem] md:text-[1.5rem] font-thin my-10 mx-20 ">
           {`${"*"} == always learning more!`}
-        </p>
+        </p> */}
       </section>
     </>
   );

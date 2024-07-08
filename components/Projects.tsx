@@ -1,7 +1,8 @@
 import React from "react";
 import { Project } from "@/app/types/Project";
 import recipe from "../public/ai_world_recipes.jpg";
-import admin from "../public/ecomm-admin.jpg";
+import admin from "../public/admin-overview.jpg";
+import adminVideo from "../public/ecomm-video.jpg";
 import store from "../public/ecomm-store.jpg";
 import photography from "../public/analissa_longoria.jpg";
 import met from "../public/met.jpg";
@@ -10,7 +11,20 @@ import bakery from "../public/bakery.jpg";
 
 export const Projects: Project[] = [
   {
-    title: "Ecommerce Admin Site",
+    title: "Video Overview of E-Commerce App",
+    description:
+      "This video describes an e-commerce platform that includes an admin site and a storefront site. The admin site serves the storefront, where you can create both goods (products) and services. Once created, customers can buy goods or book services with an employee. On the admin side, the app allows for store branding by uploading logos, hero images, and billboards. The admin then creates products with size and color attributes. To create a service, you will need to manage employees and their shifts, as well as create and manage customers. Once that's done, you can create a service so that customers can book appointments with employees. This can be done on either the admin or storefront site. Finally, the platform provides a basic sales analysis overview, and the admin can create multiple stores for other markets or businesses.",
+    image: adminVideo,
+    link: "https://www.youtube.com/watch?v=HmPwVHd1VSA&t=5s",
+    techStack:
+      "* See E-Commerce Admin and E-Commerce Store Front for tech stack",
+    codeExample: [
+    
+    
+    ],
+  },
+  {
+    title: "E-Commerce Admin Site",
     description:
       "An e-commerce admin site that lets you create multiple stores to manage products AND/OR services. The Admin creates customizable products (colors and sizes, ect.), then stores the products with the correlating store's id in a revalidating DB. The service side allows the admin to set multiple staff work schedules. Create the services offered by the store, and checks if the staff timetable allows a customer to book the service requested.",
     image: admin,
@@ -77,7 +91,7 @@ export const Projects: Project[] = [
     ],
   },
   {
-    title: "Ecommerce Store Front",
+    title: "E-Commerce Store Front",
     description:
       "An e-commerce store front that connects to the admin site. Allowing customers to view, place products and services in their cart and pay with real money via the Stripe API.",
     image: store,
@@ -293,48 +307,48 @@ export const Projects: Project[] = [
   //     // More code examples...
   //   ],
   // },
-  {
-    title: "Full Stack Bakery App - Local",
-    description: "A mock bakery app that lets you order and track your orders.",
-    image: bakery,
-    link: "localhost:3000",
-    techStack: "React, MVC Architecture, Express, Nodemon, Axios, MongoDB",
-    codeExample: [
-      {
-        skill: "React",
-        description: "Used for building user interface",
-        image: "",
-        link: "http://example.com/react",
-      },
-      // More code examples...
-    ],
-  },
-  {
-    title: "John Conway's Game of Life - Local",
-    description: "A simulation model of John Conway's infamous Game of Life.",
-    image: gol,
-    link: "localhost:3000",
-    techStack:
-      "Vanilla JavaScript, HTML, Bootstrap, Object-Oriented-Programming",
-    codeExample: [
-      {
-        skill: "React",
-        description: "Used for building user interface",
-        image: "",
-        link: "http://example.com/react",
-      },
-      {
-        skill: "React",
-        description: "Used for building user interface",
-        image: "",
-        link: "http://example.com/react",
-      },
-      {
-        skill: "React",
-        description: "Used for building user interface",
-        image: "",
-        link: "http://example.com/react",
-      },
-    ],
-  },
+  // {
+  //   title: "Full Stack Bakery App - Local",
+  //   description: "A mock bakery app that lets you order and track your orders.",
+  //   image: bakery,
+  //   link: "localhost:3000",
+  //   techStack: "React, MVC Architecture, Express, Nodemon, Axios, MongoDB",
+  //   codeExample: [
+  //     {
+  //       skill: "React",
+  //       description: "Used for building user interface",
+  //       image: "",
+  //       link: "http://example.com/react",
+  //     },
+  //     // More code examples...
+  //   ],
+  // },
+  // {
+  //   title: "John Conway's Game of Life - Local",
+  //   description: "A simulation model of John Conway's infamous Game of Life.",
+  //   image: gol,
+  //   link: "localhost:3000",
+  //   techStack:
+  //     "Vanilla JavaScript, HTML, Bootstrap, Object-Oriented-Programming",
+  //   codeExample: [
+  //     {
+  //       skill: "React",
+  //       description: "Used for building user interface",
+  //       image: "",
+  //       link: "http://example.com/react",
+  //     },
+  //     {
+  //       skill: "React",
+  //       description: "Used for building user interface",
+  //       image: "",
+  //       link: "http://example.com/react",
+  //     },
+  //     {
+  //       skill: "React",
+  //       description: "Used for building user interface",
+  //       image: "",
+  //       link: "http://example.com/react",
+  //     },
+  //   ],
+  // },
 ];

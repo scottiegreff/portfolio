@@ -8,10 +8,7 @@ export default function About() {
       <section id="about">
         <div className="h-20"></div>
         <div className="flex flex-col justify-start items-center">
-          <h1 className="text-white text-5xl">ABOUT</h1>
-          <h1 className="text-white text-3xl font-medium mt-5 mb-5 md:mb-10">
-            Scott Greff
-          </h1>
+
         </div>
         <div className="flex flex-col items-center md:flex-row md:justify-center md:items-around h-auto w-full md:mx-10">
           <Image
@@ -20,7 +17,11 @@ export default function About() {
             className="rounded-full w-[50vw] h-[50vw] md:w-[20vw] md:h-[20vw] md:mx-10 mb-5"
           ></Image>
 
-          <div className="flex flex-col justify-around items-center">
+          <div className="flex flex-col justify-around items-start ">
+          <h1 className="text-white mb-5 text-4xl m-auto mt-5 md:mx-10">ABOUT</h1>
+          <h1 className="text-white text-3xl font-medium mt-5 mb-5 md:mb-10 mx-10">
+            Scott Greff
+          </h1>
             <p className="text-1.5xl md:text-[1.25rem] text-white font-medium mx-10 mb-10">
               As a dynamic and innovative web developer, my passion lies at the
               intersection of cutting-edge technology and creative solutions. I
@@ -39,9 +40,7 @@ export default function About() {
               high-quality web solutions that drive innovation and exceed
               expectations.
             </p>
-          </div>
-        </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mx-10">
           <a
             href="/scott_greff_resume.pdf"
             download
@@ -49,6 +48,8 @@ export default function About() {
           >
             DOWNLOAD RESUME
           </a>
+        </div>
+          </div>
         </div>
       </section>
     </>
