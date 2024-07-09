@@ -23,7 +23,7 @@ export default function Portfolio() {
     <>
       <section id="portfolio">
         <div className="h-5"></div>
-        <div className="text-white text-4xl text-center mt-10 md:mt-20 md:mb-10">
+        <div className="text-white text-4xl text-center mt-10 md:mt-20 mb-10">
           Portfolio
         </div>
         {/* <div className="flex items-center justify-center my-10">
