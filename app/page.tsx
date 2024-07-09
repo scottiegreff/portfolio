@@ -19,7 +19,7 @@ export default function Home() {
           className="h-screen w-full lg:w-[66vw] me-10"
         ></iframe>
         {/* <div className="grid grid-cols-2 grid-rows-3 p-10 rounded-lg w-[33vw] h-[40vh] m-10"> */}
-        <div className="rounded w-full md:w-[33vw] flex flex-col border drop-shadow-xl border-red-700 p-10 me-10">
+        <div className="rounded w-full md:w-[33vw] flex flex-col border drop-shadow-xl border-red-700 p-5">
           <ContactForm />
           {/* <CiLinkedin className="col-span-1 row-span-2 text-[5em] text-red-700 mx-auto" />
           <CiInstagram className="col-span-1 row-span-2 text-[5em] text-red-700 mx-auto" /> */}

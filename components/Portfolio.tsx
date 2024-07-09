@@ -23,7 +23,7 @@ export default function Portfolio() {
     <>
       <section id="portfolio">
         <div className="h-5"></div>
-        <div className="text-white text-4xl text-center my-10 md:my-20">
+        <div className="text-white text-4xl text-center mt-10 md:mt-20 md:mb-10">
           Portfolio
         </div>
         {/* <div className="flex items-center justify-center my-10">
@@ -47,7 +47,7 @@ export default function Portfolio() {
                   className="flex flex-col md:max-w-lg me-5 lg:me-20"
                   key={index}
                 >
-                  <div className="my-10 mx-auto text-white border border-white p-3 flex justify-center items-center w-5 h-5 rounded-full">
+                  <div className="mx-auto text-white border border-white p-3 flex justify-center items-center w-5 h-5 rounded-full">
                     {index + 1}
                   </div>
                   <Link className="my-10" target="_blank" href={project.link}>

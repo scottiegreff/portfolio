@@ -92,7 +92,7 @@ console.log("DATA", data);
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input disabled={loading} className="bg-white w-[20em]" placeholder="" {...field} />
+                    <Input disabled={loading} className="bg-white w-60 md:w-72" placeholder="" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
