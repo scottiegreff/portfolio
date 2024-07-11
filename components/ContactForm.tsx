@@ -76,7 +76,7 @@ export const ContactForm: React.FC = () => {
                     <FormControl>
                       <Input
                         disabled={loading}
-                        className="bg-white w-60 md:w-72"
+                        className="bg-white w-60 md:w-72 text-red-700"
                         placeholder=""
                         {...field}
                       />
