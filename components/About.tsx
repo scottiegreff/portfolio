@@ -6,7 +6,6 @@ export default function About() {
   return (
     <>
       <section id="about">
-        <div className="h-20"></div>
         <div className="flex flex-col justify-start items-center">
 
         </div>
@@ -19,7 +18,7 @@ export default function About() {
 
           <div className="flex flex-col justify-around items-start ">
           <h1 className="text-white mb-5 text-4xl m-auto mt-5 md:mx-10">ABOUT</h1>
-          <h1 className="text-white text-3xl font-medium mt-5 mb-5 md:mb-10 mx-10">
+          <h1 className="text-white text-2xl md:text-3xl font-medium mt-5 mb-5 md:mb-10 mx-10">
             Scott Greff
           </h1>
             <p className="text-1.5xl md:text-[1.25rem] text-white font-medium mx-10 mb-10">

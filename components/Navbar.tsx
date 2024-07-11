@@ -12,7 +12,7 @@ import hardSkills from "@/public/coding.jpg";
 import scott from "@/public/scott.png";
 import portfolio from "@/public/raspberry.jpg";
 
-export function NavbarDemo() {
+export function Navbar() {
   const [showNavbar, setShowNavbar] = useState(true);
   const lastScrollY = useRef(0);
 
@@ -36,7 +36,7 @@ export function NavbarDemo() {
     <div
     className={`transition-transform duration-1000 ${
       showNavbar ? "translate-y-0 translate-x-20" : "-translate-y-full"
-    } fixed top-0 left-10 py-7 md:max-w-2xl z-50 mx-auto w-full font-semibold`}
+    } fixed top-0 left-5 md:left-14 py-7 md:max-w-2xl z-50 mx-auto w-full font-semibold`}
   >
     <div className="space-x-4">
       <HoveredLink  href="#portfolio">
