@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -21,6 +20,7 @@
     "clsx": "^2.1.0",
     "embla-carousel-react": "^8.0.0",
     "firebase": "^10.12.3",
+    "firestore": "^1.1.6",
     "framer-motion": "^11.0.6",
     "next": "14.1.1",
     "react": "^18",

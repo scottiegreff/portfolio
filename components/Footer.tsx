@@ -1,8 +1,16 @@
+"use client"
 import React from "react";
 import { CiInstagram } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
+import { toast } from "react-hot-toast";
 
 export default function Footer() {
+
+  toast.success("Nice to connect.", {
+    icon: "👋",
+    position: "top-right", // Change this to your preferred position
+  });
+
   return (
     <footer className="mb-20">
       <div className="flex justify-center">

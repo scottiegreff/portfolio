@@ -48,12 +48,9 @@ export const ContactForm: React.FC = () => {
   const onSubmit = async (data: CustomerFormValues) => {
     setLoading(true);
     try {
-      console.log("DATA??????????????", data);
-      const res = postEmail(data)
-     
-      console.log("RES??????????????", res)
-
-      toast.success("Nice to connect.", { icon: "👋" });
+      const res = await postEmail(data);
+      console.log("data", data);
+      
     } catch (error: any) {
       toast.error("Something went wrong.");
     } finally {
@@ -106,7 +103,7 @@ export const ContactForm: React.FC = () => {
             className="ml-auto bg-red-700 drop-shadow-xl"
             type="submit"
           >
-            {{ loading } ? action : loadingAction}
+            {loading ? loadingAction : action}
           </Button>
         </form>
       </Form>
