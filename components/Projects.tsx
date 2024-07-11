@@ -33,7 +33,7 @@ export const Projects: Project[] = [
   {
     title: "E-Commerce Admin Site",
     shortDescription:
-      "An e-commerce admin site that lets you create a business: branding, products, services, employees, shift, customers, book services, analyze sales and pay.",
+      "An e-commerce admin site that lets you create business': branding, products, services, employees, shifts, customers, book services, analyze sales, and then pay.",
     description:
       "An e-commerce admin site that lets you create multiple stores to manage products AND/OR services. The Admin creates customizable products (colors and sizes, ect.), then stores the products with the correlating store's id in a revalidating DB. The service side allows the admin to set multiple staff work schedules. Create the services offered by the store, and checks if the staff timetable allows a customer to book the service requested.",
     image: admin,
@@ -178,7 +178,7 @@ export const Projects: Project[] = [
   {
     title: "AI Recipe App",
     shortDescription:
-      "An AI recipe app that lets you discover world recipes based on your dietary preferences, and come back later to view your saved recipes.",
+      "An AI recipe app that lets you discover world recipes based on your dietary preferences, and then come back later to cook your saved recipes.",
     description:
       "An AI recipe app that lets you discover and save world recipes based on your dietary preferences.",
     image: recipe,
