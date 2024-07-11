@@ -5,7 +5,7 @@ import { CiLinkedin } from "react-icons/ci";
 
 function Socials() {
   return (
-    <div className="flex flex-row gap-4 mt-5">
+    <div className="flex flex-row gap-4">
       <Link
         target="_blank"
         href="https://www.linkedin.com/in/scott-greff-607341282/"

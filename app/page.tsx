@@ -11,8 +11,9 @@ import { ContactForm } from "@/components/ContactForm";
 //
 export default function Home() {
   return (
-    <main className="mb-20">
-      <div className="flex flex-col md:flex-row md:items-center justify-center gap-4 h-screen">
+    <main className="mb-20 w-full m-auto">
+      <NavbarDemo />
+      <div className="flex flex-col md:flex-row md:items-center justify-center h-screen">
         <iframe
           src="https://my.spline.design/welcomeblob-4e60ebf4ef3980e3eee6e23dc100691a/"
           frameBorder="0"
@@ -26,10 +27,10 @@ export default function Home() {
           <Socials />
         </div>
       </div>
-      <NavbarDemo />
+
       <hr />
       <Portfolio />
-      <hr className="my-[8vh]" />
+      <hr className="my-20" />
       <About />
       <hr className="my-20" />
       <HardSkills />

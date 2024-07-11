@@ -5,9 +5,9 @@ import * as z from "zod";
 import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-// import { toast } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 
-// import { Customer } from "@prisma/client";
+import postEmail from "@/actions/postEmail";
 // import { useParams, useRouter } from "next/navigation";
 
 import { Input } from "@/components/ui/input";
@@ -36,6 +36,7 @@ export const ContactForm: React.FC = () => {
   const description = "Add a new customer";
   const toastMessage = "Customer created.";
   const action = "Connect";
+  const loadingAction = "Connecting";
 
   const form = useForm<CustomerFormValues>({
     resolver: zodResolver(formSchema),
@@ -45,23 +46,20 @@ export const ContactForm: React.FC = () => {
   });
 
   const onSubmit = async (data: CustomerFormValues) => {
-//     console.log("DATA", data);
-//     try {
-//       setLoading(true);
-//         // await axios.post(`/api/${params.storeId}/customers`, data);
-//       }
-//     //   router.refresh();
+    setLoading(true);
+    try {
+      console.log("DATA??????????????", data);
+      const res = postEmail(data)
+     
+      console.log("RES??????????????", res)
 
-//     //   toast.success(toastMessage);
-//     } catch (error: any) {
-//     //   toast.error("Something went wrong.");
-//     } finally {
-//       setLoading(false);
-//     }
-console.log("DATA", data);
+      toast.success("Nice to connect.", { icon: "👋" });
+    } catch (error: any) {
+      toast.error("Something went wrong.");
+    } finally {
+      setLoading(false);
+    }
   };
-
-
 
   return (
     <>
@@ -83,7 +81,6 @@ console.log("DATA", data);
           className="space-y-4 text-red-700 ms-3"
         >
           <div className="">
-        
             {/* EMAIL */}
             <FormField
               control={form.control}
@@ -92,19 +89,28 @@ console.log("DATA", data);
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input disabled={loading} className="bg-white w-60 md:w-72" placeholder="" {...field} />
+                    <Input
+                      disabled={loading}
+                      className="bg-white w-60 md:w-72"
+                      placeholder=""
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
-      
           </div>
-          <Button disabled={loading} className="ml-auto bg-red-700 drop-shadow-xl" type="submit">
-            {action}
+          <Button
+            disabled={loading}
+            className="ml-auto bg-red-700 drop-shadow-xl"
+            type="submit"
+          >
+            {{ loading } ? action : loadingAction}
           </Button>
         </form>
       </Form>
+      <p className="ms-3 my-3 text-red-700">scottiegreff@gmail.com</p>
     </>
   );
 };
