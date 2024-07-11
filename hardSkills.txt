@@ -9,12 +9,11 @@
         Java,
         C++,
         SQL,
-        PHP*,
-      ,
+        PHP,
     ,
     
        Front/Back Frameworks,
-       React, NextJS, Express, Django*,
+       React, NextJS, Express,
     ,
     
        CSS Frameworks,
@@ -29,62 +28,58 @@
         Material-UI,
         Tailwind-UI,
       ,
-    ,
     
        Databases,
        PostgreSQL, MongoDB, SQLite, Plain JSON,
     ,
-      ORMs,  Mongoose, Prisma, Drizzle* ,
+      
+      ORMs,  Mongoose, Prisma, Drizzle ,
     
        Authentication,
        
         OAuth,
         Auth.js,
-        Clerk*,
+        Clerk,
         Sessions,
         JWT,
         Adapters,
-        Database,
         Providers (Google,Facebook, etc.),
-      ,
     ,
+
       State Management,  Redux, Context, Zustand ,
+      ,
     
        APIs,
        
         REST API,
         Fetch,
         Axios,
-        Public,
-        Token-Based,
-        SOAP*,
-      ,
+        Server Actions,
     ,
     
        Form Management and Validation,
        React Hook Form, ZOD, Toast,
     ,
 
-    // 
-    //    Cloud Services,
-    //    AWS, Google Cloud, Azure, Firebase, Netlify, Vercel,
-    // ,
-    // // 
+        Cloud Services,
+        AWS, Google Cloud, Azure, Firebase, Netlify, Vercel,
+      ,
+
     // //    Containerization,
-    // //    Docker, Kubernetes, Vagrant, VirtualBox,
+    // //    Docker, Kubernetes,
     // // ,
     // 
-    //    CI/CD,
-    //    GitHub Actions, Travis CI, Circle CI, Jenkins, GitLab,
-    // ,
+        CI/CD,
+        GitHub Actions, Jenkins, GitLab,
+     ,
 
     // 
     //    WebGL,
-    //    ThreeJS, BabylonJS, A-Frame, PlayCanvas, Regl,
+    //    ThreeJS, BabylonJS,
     // ,
     // 
     //    Serverless,
-    //    AWS Lambda, Azure Functions, Google Cloud Functions,
+    //    AWS Lambda, Google Cloud Functions,
     // ,
 
       Accessibility,  Aria, Screen Readers, UX/UI ,
@@ -94,18 +89,16 @@
     // ,
     
        Runtime Environments,
-       NodeJS, AWS Lambda*, MS DOTNET*,
+       NodeJS, MS DOTNET,
     ,
     
        Security & Prevention,
-       
+
         SQL Injection,
         CORS,
         Cross-Site-Scripting,
         CSRF,
         XSS,
-        *continual education*,
-      ,
     ,
     
        SEO,
@@ -116,14 +109,13 @@
         Keyword Research,
         Off-Page Optimization,
         Backlinks,
-        Google Analytics,
-        hrefs*,
-      ,
     ,
-      Repositories,  Git, GitHub, GitBucket* ,
-    
+
+      Repositories,  Git, GitHub,
+    ,
+
        Software Architecture,
-       Model-View-Controller, Model-View-ViewModel*,
+       Model-View-Controller, Model-View-ViewModel,
     ,
     
        Methodologies,
@@ -132,28 +124,24 @@
         Agile Development,
         Scrum,
         User Stories,
-        Waterfall*,
       ,
-    ,
     
        Coding Paradigms,
        
         Functional Programming,
         Object-Oriented Programming,
-        Procedural Programming*,
+        Procedural Programming,
       ,
-    ,
+
     //  Testing,  Jest,
     
        Animation - 2&3D,
        
         CSS,
-        Spline,
         Adobe After Effects,
         Framer Motion,
-        Blender*,
-        BabylonJS*,
-      ,
+        Spline,
+        Blender,
     ,
     
        Graphics Editors,
@@ -162,7 +150,6 @@
         Adobe Illustrator,
         Adobe Photoshop,
         Adobe Premiere Pro,
-      ,
     ,
     
        Audio Recording,
@@ -171,7 +158,6 @@
         Logic Pro,
         Cubase,
         Garage Band,
-        Pro Tools*,
-      ,
-    ,
+        Pro Tools,
+        ,
 

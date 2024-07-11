@@ -17,6 +17,7 @@ export default function Home() {
         <iframe
           src="https://my.spline.design/welcomeblob-4e60ebf4ef3980e3eee6e23dc100691a/"
           frameBorder="0"
+          
           className="h-screen w-full lg:w-[66vw] me-10"
         ></iframe>
         <div className="rounded w-full md:w-[33vw] flex flex-col border drop-shadow-xl border-red-700 p-5">

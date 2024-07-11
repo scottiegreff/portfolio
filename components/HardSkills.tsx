@@ -1,5 +1,6 @@
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
+import { title } from "process";
 
 /**
  * Renders a component displaying a list of hard skills.
@@ -23,27 +24,39 @@ export default function HardSkills() {
     },
     {
       title: "Front/Back Frameworks",
-      body: ["React", "NextJS", "Express", `Django\u002a`],
+      body: ["React", "NextJS", "Express"],
     },
     {
+      title: "Runtime Environments",
+      body: ["NodeJS", "MS DOTNET"],
+    },
+    {
+      title: "Cloud Services & Deployments",
+      body: ["AWS", "Firebase", "Netlify", "Vercel"],
+    },
+    {
+      title: "Databases",
+      body: ["PostgreSQL", "MongoDB", "SQLite", "Plain JSON"],
+    },
+    { title: "ORMs", body: ["Mongoose", "Prisma"] },
+    {
       title: "CSS",
-      body: ["CSS", "Tailwind", "Bootstrap", "SASS"],
+      body: ["CSS", "Tailwind", "SASS"],
     },
     {
       title: "Component Libraries",
       body: [
         "ShadCN",
         "React-Bootstrap",
+        "Chakra-UI",
         "Styled-Components",
         "Material-UI",
-        "Tailwind-UI",
       ],
     },
     {
-      title: "Databases",
-      body: ["PostgreSQL", "MongoDB", "SQLite", "Plain JSON"],
+      title: "State Management",
+      body: ["Redux Toolkit", "Context", "Zustand"],
     },
-    { title: "ORMs", body: ["Mongoose", "Prisma", `Drizzle\u002a`] },
     {
       title: "Authentication & Authorization",
       body: [
@@ -57,37 +70,22 @@ export default function HardSkills() {
       ],
     },
     {
-      title: "State Management",
-      body: ["Redux Toolkit", "Context", "Zustand"],
-    },
-    {
       title: "APIs",
-      body: [
-        "REST API",
-        "Fetch",
-        "Axios",
-        "Public",
-        "Token-Based",
-        `SOAP\u002a`,
-      ],
+      body: ["REST API", "Fetch", "Axios", "Server Actions"],
     },
     {
       title: "Form Management and Validation",
-      body: ["React Hook Form", "ZOD", "Toast"],
+      body: ["React Hook Form", "ZOD"],
     },
 
-    // {
-    //   title: "Cloud Services",
-    //   body: ["AWS", "Google Cloud", "Azure", "Firebase", "Netlify", "Vercel"],
-    // },
     // // {
     // //   title: "Containerization",
     // //   body: ["Docker", "Kubernetes", "Vagrant", "VirtualBox"],
     // // },
-    // {
-    //   title: "CI/CD",
-    //   body: ["GitHub Actions", "Travis CI", "Circle CI", "Jenkins", "GitLab"],
-    // },
+    {
+      title: "CI/CD",
+      body: ["GitHub Actions", "Jenkins"],
+    },
 
     // {
     //   title: "WebGL",
@@ -103,10 +101,7 @@ export default function HardSkills() {
     //   title: "Package Managers",
     //   body: ["NPM", "Yarn", "PNPM", "Vite", "Webpack", "Homebrew"],
     // },
-    {
-      title: "Runtime Environments",
-      body: ["NodeJS", `AWS Lambda\u002a`, `MS DOTNET\u002a`],
-    },
+
     {
       title: "Security & Prevention",
       body: [
@@ -131,14 +126,14 @@ export default function HardSkills() {
         `hrefs\u002a`,
       ],
     },
-    { title: "Repositories", body: ["Git", "GitHub", `GitBucket\u002a`] },
+    { title: "Repositories", body: ["Git", "GitHub"] },
     {
       title: "Software Architecture",
       body: ["Model-View-Controller", `Model-View-ViewModel\u002a`],
     },
     {
       title: "Methodologies",
-      body: ["CI/CD", "Agile Development", "Scrum", "Jira", `Waterfall\u002a`],
+      body: ["CI/CD", "Agile Development", "Scrum", "Jira"],
     },
     {
       title: "Coding Paradigms",
@@ -159,8 +154,7 @@ export default function HardSkills() {
         "Spline",
         "Adobe After Effects",
         "Framer Motion",
-        `Blender\u002a`,
-        `BabylonJS\u002a`,
+        "Blender",
       ],
     },
     {
@@ -174,13 +168,7 @@ export default function HardSkills() {
     },
     {
       title: "Audio Recording",
-      body: [
-        "Audacity",
-        "Logic Pro",
-        "Cubase",
-        "Garage Band",
-        `Pro Tools\u002a`,
-      ],
+      body: ["Audacity", "Logic Pro", "Cubase", "Garage Band", "Pro Tools"],
     },
   ];
 
