@@ -270,7 +270,7 @@ export const Projects: Project[] = [
   {
     title: "Analissa Longoria Photography",
     shortDescription:
-      "This simple and back to basics site is a photographers body of work that features fashion and lifestyle.",
+      "This simple and back to basics site of a local photographers body of work that features fashion, the arts, and lifestyle.",
     description:
       "This simple and back to basics site is a photographers work that features fashion and lifestyle. Featured in many magazines and brands.",
     image: photography,
