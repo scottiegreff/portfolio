@@ -3,6 +3,7 @@ import { CodeExample } from '@/app/types/CodeExample';
 
 export type Project = {
     title: string;
+    shortDescription: string; 
     description: string;
     image: StaticImageData;
     link: string;

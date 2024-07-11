@@ -64,6 +64,10 @@ export default function Portfolio() {
                   >
                     {project.title}
                   </Link>
+                  <div className="text-white text-sm text-center mb-5 mx-auto w-[45vw] md:w-[45vw] xl:w-[25vw]">
+                    {project.shortDescription}
+                  </div>
+                  <hr className="my-4"/>
                   <div className="mx-auto w-[50vw] md:w-[40vw] xl:w-[20vw] mb-10">
                     <PortfolioAccordion project={project} index={index} />
                   </div>
