@@ -13,19 +13,27 @@ export const Projects: Project[] = [
   {
     title: "Video Overview of E-Commerce App",
     shortDescription:
-      "A non-technical, short video describing the UI of a small business platform. A walk through of a hair salon's goods and services transactions.",
+      "A concise, non-technical video showcasing the UI of a real-world production app for a hair salon. This video demonstrates the reusability and versatility for any small business selling goods and services.",
     description:
       "This video describes an e-commerce platform that includes an admin site and a storefront site. The admin site serves the storefront, where you can create both goods (products) and services. Once created, customers can buy goods or book services with an employee. On the admin side, the app allows for store branding by uploading logos, hero images, and billboards. The admin then creates products with size and color attributes. To create a service, you will need to manage employees and their shifts, as well as create and manage customers. Once that's done, you can create a service so that customers can book appointments with employees. This can be done on either the admin or storefront site. Finally, the platform provides a basic sales analysis overview, and the admin can create multiple stores for other markets or businesses.",
     image: adminVideo,
     link: "https://www.youtube.com/watch?v=HmPwVHd1VSA&t=5s",
     techStack:
       "* See E-Commerce Admin and E-Commerce Store Front for tech stack",
-    codeExample: [{skill: "* See E-Commerce Admin and E-Commerce Storefront under Code Examples", description:"", image: "", link:""}],
-    
+    codeExample: [
+      {
+        skill:
+          "* See E-Commerce Admin and E-Commerce Storefront under Code Examples",
+        description: "",
+        image: "",
+        link: "",
+      },
+    ],
   },
   {
     title: "E-Commerce Admin Site",
-    shortDescription: "An e-commerce admin site that lets you create a business: branding, products, services, employees, shift, customers, book services, analyze sales and pay.",
+    shortDescription:
+      "An e-commerce admin site that lets you create a business: branding, products, services, employees, shift, customers, book services, analyze sales and pay.",
     description:
       "An e-commerce admin site that lets you create multiple stores to manage products AND/OR services. The Admin creates customizable products (colors and sizes, ect.), then stores the products with the correlating store's id in a revalidating DB. The service side allows the admin to set multiple staff work schedules. Create the services offered by the store, and checks if the staff timetable allows a customer to book the service requested.",
     image: admin,
