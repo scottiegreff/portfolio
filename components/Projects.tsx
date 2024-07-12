@@ -33,7 +33,7 @@ export const Projects: Project[] = [
   {
     title: "E-Commerce Admin Site",
     shortDescription:
-      "An e-commerce admin site that lets you create business': branding, products, services, employees, shifts, customers, book services, analyze sales, and then pay.",
+      "An e-commerce admin site for businesses to create: branding, products, services, employees, shifts, customers, booking services, sales analytics, and payment.",
     description:
       "An e-commerce admin site that lets you create multiple stores to manage products AND/OR services. The Admin creates customizable products (colors and sizes, ect.), then stores the products with the correlating store's id in a revalidating DB. The service side allows the admin to set multiple staff work schedules. Create the services offered by the store, and checks if the staff timetable allows a customer to book the service requested.",
     image: admin,
@@ -102,9 +102,9 @@ export const Projects: Project[] = [
   {
     title: "E-Commerce Store Front",
     shortDescription:
-      "An e-commerce store front that connects to the admin site. Allowing customers to view, place products and services in a cart and then pay.",
+      "An e-commerce storefront that connects to the admin site. Customers can view, place products and services in a cart and then pay.",
     description:
-      "An e-commerce store front that connects to the admin site. Allowing customers to view, place products and services in their cart and pay with real money via the Stripe API.",
+      "An e-commerce storefront that connects to the admin site. Customers can shop, place products and services in their cart, and pay with real money via the Stripe API.",
     image: store,
     link: "https://prisoneroflovestudio.com/",
     techStack:
@@ -113,35 +113,35 @@ export const Projects: Project[] = [
       {
         skill: "App-Router ",
         description:
-          "Used for routing between pages with dynamic store ids, product ids ect. As well as protecting routes from unauthorized users.",
+          "Used for routing between pages with dynamic store ids, product ids etc. and protecting routes from unauthorized users.",
         image: "",
         link: "https://github.com/scottiegreff/ecommerce-admin/tree/master/app",
       },
       {
         skill: "Authentication & Authorization",
         description:
-          "Leveraged the Clerk API for auth which allows for sign-in through credentials and providers like Google's one click sign in. Once connected to the PostGres DB the User's table is populated by Clerk's adapter.",
+          "Leveraged the Clerk API for auth which allows for sign-in through credentials and providers such as Google's one click sign in. Once connected to the Postgres DB the user's table is populated by Clerk's adapter.",
         image: "http://example.com/react.png",
         link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/api/%5BstoreId%5D/products/route.ts",
       },
       {
         skill: "Prisma ORM",
         description:
-          "Used for defining the schema of the PostGres DB. This allows for the creation of a type-safe client for the database.",
+          "Used for defining the schema of the Postgres DB. This allows for the creation of a type-safe client for the database.",
         image: "",
         link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/actions/get-graph-revenue.ts",
       },
       {
         skill: "Revalidating DB",
         description:
-          "Keeps the DB data fresh with with every change requested by the admin and the store front. This provides the the store and the admin to have current and reliable information.",
+          "Keeps the DB data fresh with with every change requested by the admin and the storefront. This provides the the store and the admin to have current and reliable information.",
         image: "",
         link: "https://github.com/scottiegreff/ecommerce-admin/blob/master/app/(dashboard)/%5BstoreId%5D/(routes)/orders/page.tsx",
       },
       {
         skill: "Stripe API",
         description:
-          "Used for processing payments from the customer. This allows for the customer to pay with real money.",
+          "Used for processing customer payments. This allows for the customer to pay with real money.",
         image: "",
         link: "",
       },
@@ -178,7 +178,7 @@ export const Projects: Project[] = [
   {
     title: "AI Recipe App",
     shortDescription:
-      "An AI recipe app that lets you discover world recipes based on your dietary preferences, and then come back later to cook your saved recipes.",
+      "An AI recipe app that lets you discover world recipes based on your dietary preferences, save, and cook your recipes at a later time.",
     description:
       "An AI recipe app that lets you discover and save world recipes based on your dietary preferences.",
     image: recipe,
