@@ -2,6 +2,7 @@
 import React from "react";
 import { CiInstagram } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
+import { VscGithub } from "react-icons/vsc";
 import { toast } from "react-hot-toast";
 
 export default function Footer() {
@@ -13,18 +14,26 @@ export default function Footer() {
 
   return (
     <footer className="mb-20">
-      <div className="flex justify-center">
+      <div className="flex items-center justify-center">
         <a
           href="https://www.linkedin.com/in/scott-greff-607341282/"
-          className="w-10 h-10"
+          className="w-10 h-10 flex items-center justify-center"
           target="_blank"
         >
           {" "}
           <CiLinkedin className="text-5xl text-white mx-auto" />
         </a>
         <a
+          href="https://www.github.com/scottiegreff"
+          className="w-10 h-10 flex items-center justify-center"
+          target="_blank"
+        >
+          {" "}
+          <VscGithub className="text-4xl text-white m-auto" />
+        </a>
+        <a
           href="https://www.instagram.com/scottiegreff/?hl=en"
-          className="w-10 h-10"
+          className="w-10 h-10 flex items-center justify-center"
           target="_blank"
         >
           {" "}
