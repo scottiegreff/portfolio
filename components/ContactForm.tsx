@@ -28,8 +28,6 @@ export const ContactForm: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [user, setUser] = useState(false);
 
-  const title = "Create customer";
-  const description = "Add a new customer";
   const toastMessage = "Thank you, Scott will be in contact with you shortly!";
   const action = "Connect";
   const loadingAction = "Connecting";

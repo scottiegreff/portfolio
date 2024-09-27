@@ -11,20 +11,20 @@ function Socials() {
         target="_blank"
         href="https://www.linkedin.com/in/scott-greff-607341282/"
       >
-        <CiLinkedin className="text-[4em] text-red-700 drop-shadow-xl" />
+        <CiLinkedin className="text-[2em] text-red-700 drop-shadow-xl" />
       </Link>
       <Link
         target="_blank"
         href="https://github.com/scottiegreff"
         className="flex items-center justify-center"
       >
-        <VscGithub className="text-[3.15em] text-red-700 drop-shadow-xl" />
+        <VscGithub className="text-[1.5em] text-red-700 drop-shadow-xl" />
       </Link>
       <Link
         target="_blank"
         href="https://www.instagram.com/scottiegreff/?hl=en"
       >
-        <CiInstagram className="text-[4em] text-red-700 drop-shadow-xl" />
+        <CiInstagram className="text-[2em] text-red-700 drop-shadow-xl" />
       </Link>
     </div>
   );
