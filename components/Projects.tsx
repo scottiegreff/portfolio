@@ -165,7 +165,7 @@ export const Projects: Project[] = [
   {
     title: "E-Commerce Admin Site",
     shortDescription:
-      "An e-commerce admin site for businesses to create: branding, products, services, employees, shifts, customers, booking services, sales analytics, and payment.",
+      "An e-commerce admin site for businesses to create: branding, products, services, employees, shifts, customers, booking services, analytics, and payment.",
     description:
       "An e-commerce admin site that lets you create multiple stores to manage products AND/OR services. The Admin creates customizable products (colors and sizes, ect.), then stores the products with the correlating store's id in a revalidating DB. The service side allows the admin to set multiple staff work schedules. Create the services offered by the store, and checks if the staff timetable allows a customer to book the service requested.",
     image: admin,
