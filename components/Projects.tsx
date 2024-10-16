@@ -18,7 +18,7 @@ export const Projects: Project[] = [
     description:
       "Not a flagship app, but a fun music game inspired by crossword puzzles and the love of music. Test your knowledge of top Billboard music by choosing one or multiple decades to play from. A total of ~1400 songs",
     image: trivTunes,
-    link: "https://trivtunes.vercel.app/",
+    link: "https://trivtunes.com/",
     techStack:
       "React, TypeScript, GO, YouTube API, Spotify API, Clerk Auth",
     codeExample: [
